@@ -11,16 +11,14 @@
 				<img class="logo" src="agria-logo.jpg" />
 			</header>
 
-			<section>
+			<div>
 				<h1>Agria bildgalleri</h1>
 
-				<nav class="sort-by">
-					<ul>
-						<li>Senaste bilderna</li>
-						<li>Flest hjärtan</li>
-						<li>Mest visade</li>
-					</ul>
-				</nav>
+				<div class="sort-by">
+					<a href="#">Senaste bilderna</a>
+					<a href="#">Flest hjärtan</a>
+					<a href="#">Mest visade</a>
+				</div>
 
 				<span class="add-image-button">Lägg till din bild</span>
 
@@ -68,7 +66,48 @@
 					</div>
 					<div class="arrow arrow-right"></div>
 				</div>
-			</section>
+
+				<div class="gallery-page-nav">
+					<span class="gallery-page-nav-arrow">|←</span>
+					<span>Sida 1 av 718</span>
+					<span class="gallery-page-nav-arrow">→|</span>
+				</div>
+
+				<div class="search-container">
+					<h2 class="search-title">Sök bilder</h2>
+					<p class="current-images">Nu 20173 bilder</p>
+
+					<form action="" class="filters">
+						<select id="filter-by-type" class="filter-by-type">
+							<option disabled selected>Välj djurslag</option>
+							<option>Hund</option>
+							<option>Katt</option>
+							<option>Gnagare</option>
+							<option>Reptiler</option>
+						</select>
+
+						<select id="filter-by-breed" class="filter-by-breed">
+							<option disabled selected>Välj ras (antal)</option>
+						</select>
+					</form>
+
+					<div class="tags-container">
+						<h3>Taggar:</h3>
+						<div class="tags">
+							<a href="#">Utställning (234)</a>
+							<a href="#">Valpar (456)</a>
+							<a href="#">Lek (423)</a>
+							<a href="#">Tik (2300)</a>
+							<a href="#">Hane (245)</a>
+							<a href="#">Sommar (456)</a>
+							<a href="#">Vinter (423)</a>
+							<a href="#">Bad (2300)</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="social-media"></div>
+			</div>
 		</div>
 	</body>
 </html>

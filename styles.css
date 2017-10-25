@@ -13,7 +13,7 @@ header {
 }
 
 .logo {
-	height: 100px;
+	height: 70px;
 	margin: 20px 0;
 	width: auto;
 }
@@ -39,22 +39,19 @@ h1 {
 }
 
 .sort-by {
-	border-bottom: 3px solid #B760A9;
+	border-bottom: 5px solid #B760A9;
 }
 
-.sort-by ul {
-	list-style: none;
-}
-
-.sort-by ul li {
+.sort-by a {
 	background: #B760A9;
 	color: #FFF;
 	display: inline;
 	font-size: 14px;
 	font-stretch: condensed;
 	line-height: 25px;
-	padding: 5px 10px;
 	margin-right: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
 	text-transform: uppercase;
 }
 
@@ -75,14 +72,14 @@ h1 {
 	align-content: flex-start;
 	-ms-flex-pack: justify;
 	justify-content: space-around;
-	margin: 15px 0 5px 0;
+	margin-top: 15px;
 }
 
 .arrow {
 	background: #E1E1E1;
 	border-radius: 5px;
 	margin-bottom: 15px;
-	width: 2.5%;
+	width: 25px;
 }
 
 .gallery-thumbnails {
@@ -95,11 +92,11 @@ h1 {
 	-ms-flex-pack: justify;
 	justify-content: space-around;
 	margin-top: -5px;
-	width: 95%;
+	width: 100%;
 }
 
 .gallery-image-thumbnail {
-	background: #999;
+	background: #B1B1B1;
 	height: 80px;
 	margin: 5px 2px;
 	width: 120px;
@@ -109,4 +106,75 @@ h1 {
 	height: 0;
 	margin: 5px 2px;
 	width: 120px;
+}
+
+.gallery-page-nav {
+	width: 100%;
+	font-size: 11px;
+	color: #777;
+	text-align: right;
+}
+
+.gallery-page-nav-arrow {
+	border: 1px solid #E1E1E1;
+	padding: 3px;
+}
+
+.search-container {
+	float: left;
+	margin-left: 30px;
+	max-width: 450px;
+}
+
+.search-title {
+	display: inline;
+	color: #B760A9;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.current-images {
+	display: inline;
+	color: #B760A9;
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.filters {
+	margin-top: 5px;
+}
+
+.filters select {
+	padding: 5px;
+	border: 1px solid #E1E1E1;
+	font-size: 11px;
+}
+
+.tags-container {
+	margin-top: 5px;
+	display: flex;
+}
+
+.tags-container h3 {
+	font-weight: normal;
+	font-size: 11px;
+	margin: 1px 5px 0 0;
+}
+
+.tags {
+	line-height: 12px;
+}
+
+.tags a {
+	margin-right: 5px;
+	color: #B760A9;
+	font-size: 11px;
+}
+
+.social-media {
+	float: right;
+	margin-top: 30px;
+	width: 200px;
+	height: 30px;
+	background: grey;
 }
