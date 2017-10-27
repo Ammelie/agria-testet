@@ -3,29 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="styles.css">
+		<script src="https://use.fontawesome.com/30c7d56281.js"></script>
 		<title>Agria djurförsäkring</title>
 	</head>
 	<body>
 		<div class="content">
+
 			<header>
-				<img class="logo" src="agria-logo.jpg" />
+				<img class="logo" src="agria-logo.jpg" alt="Agria Djurförsäkringar" />
 			</header>
-
-
 
 			<main>
 				<h1>Agria bildgalleri</h1>
 
 				<div class="sort-by">
-					<a href="#">Senaste bilderna</a>
-					<a href="#">Flest hjärtan</a>
-					<a href="#">Mest visade</a>
+					<a href="#" class="active-filter">Senaste bilderna</a>
+					<a href="#">Flest hjärtan <i class="fa fa-heart" aria-hidden="true"></i></a>
+					<a href="#">Mest visade <i class="fa fa-eye" aria-hidden="true"></i></a>
 				</div>
 
-				<span class="add-image-button">Lägg till din bild</span>
+				<span class="add-image-button"><i class="fa fa-plus" aria-hidden="true"></i> Lägg till din bild</span>
 
 				<div class="gallery-container">
-					<div class="arrow arrow-left"></div>
+					<div class="arrow disabled"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
 					<div class="gallery-thumbnails">
 						<div class="gallery-image-thumbnail"></div>
 						<div class="gallery-image-thumbnail"></div>
@@ -56,8 +56,7 @@
 						<div class="gallery-image-thumbnail"></div>
 						<div class="gallery-image-thumbnail"></div>
 
-						<!-- Empty elements for proper alignment of last row (I don't particularly
-						like this hack since it adds non-semantic elements to the markup) -->
+						<!-- Empty elements for proper alignment of last row (I don't particularly like this hack since it adds non-semantic elements to the markup) -->
 						<div class="gallery-image-empty"></div>
 						<div class="gallery-image-empty"></div>
 						<div class="gallery-image-empty"></div>
@@ -66,52 +65,71 @@
 						<div class="gallery-image-empty"></div>
 						<div class="gallery-image-empty"></div>
 					</div>
-					<div class="arrow arrow-right"></div>
+					<div class="arrow"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
 				</div>
 
 				<div class="gallery-page-nav">
-					<span class="gallery-page-nav-arrow">|←</span>
+					<span class="gallery-page-nav-arrow">|<i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>
 					<span>Sida 1 av 718</span>
-					<span class="gallery-page-nav-arrow">→|</span>
+					<span class="gallery-page-nav-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>|</span>
 				</div>
 
-				<div class="search-container">
-					<h2 class="search-title">Sök bilder</h2>
-					<p class="current-images">Nu 20173 bilder</p>
+				<div class="filter-share-container">
+					<div class="search-container">
+						<h2 class="search-title">Sök bilder</h2>
+						<p class="current-images">Nu 20173 bilder</p>
 
-					<form action="" class="filters">
-						<select id="filter-by-type" class="filter-by-type">
-							<option disabled selected>Välj djurslag</option>
-							<option>Hund</option>
-							<option>Katt</option>
-							<option>Gnagare</option>
-							<option>Reptiler</option>
-						</select>
+						<form action="" class="filters">
+							<select id="filter-by-type" class="filter-by-type">
+								<option disabled selected>Välj djurslag</option>
+								<option>Hund</option>
+								<option>Katt</option>
+								<option>Gnagare</option>
+								<option>Reptiler</option>
+							</select>
 
-						<select id="filter-by-breed" class="filter-by-breed">
-							<option disabled selected>Välj ras (antal)</option>
-						</select>
-					</form>
+							<select id="filter-by-breed" class="filter-by-breed">
+								<option disabled selected>Välj ras (antal)</option>
+							</select>
+						</form>
 
-					<div class="tags-container">
-						<h3>Taggar:</h3>
-						<div class="tags">
-							<a href="#">Utställning (234)</a>
-							<a href="#">Valpar (456)</a>
-							<a href="#">Lek (423)</a>
-							<a href="#">Tik (2300)</a>
-							<a href="#">Hane (245)</a>
-							<a href="#">Sommar (456)</a>
-							<a href="#">Vinter (423)</a>
-							<a href="#">Bad (2300)</a>
+						<div class="tags-container">
+							<h3>Taggar:</h3>
+							<div class="tags">
+								<a href="#">Utställning (234)</a>
+								<a href="#">Valpar (456)</a>
+								<a href="#">Lek (423)</a>
+								<a href="#">Tik (2300)</a>
+								<a href="#">Hane (245)</a>
+								<a href="#">Sommar (456)</a>
+								<a href="#">Vinter (423)</a>
+								<a href="#">Bad (2300)</a>
+							</div>
 						</div>
 					</div>
+
+					<!-- Icons made by Freepik and Smashicons from www.flaticon.com -->
+					<div class="social-media">
+						<a href="#" title="Share" target="_blank">
+							<img alt="Share" src="share-icons/more.png" />
+							<h2>Dela</h2>
+						</a>
+						<span>|</span>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fammelieneth.se" title="Share on Facebook" target="_blank">
+							<img alt="Share on Facebook" src="share-icons/facebook.png" />
+						</a>
+						<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fammelieneth.se&title=&summary=&source=http%3A%2F%2Fammelieneth.se" target="_blank" title="Share on LinkedIn">
+							<img alt="Share on LinkedIn" src="share-icons/linkedin.png" />
+						</a>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Fammelieneth.se" target="_blank" title="Share on Google+">
+							<img alt="Share on Google+" src="share-icons/google-plus.png" />
+						</a>
+						<a href="https://twitter.com/intent/tweet?source=http%3A%2F%2FHEJ&text=:%20http%3A%2F%2Fammelieneth.se" target="_blank" title="Tweet">
+							<img alt="Tweet" src="share-icons/twitter.png" />
+						</a>
+					</div>
 				</div>
-
-				<div class="social-media"></div>
 			</main>
-
-
 
 			<footer>
 				<div class="contact-info">
@@ -186,10 +204,21 @@
 						<a href="#">Pussel</a>
 						<a href="#">Forum</a>
 					</div>
+
+					<!-- Empty elements for proper alignment of last row -->
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
+					<div class="bottom-nav-empty"></div>
 				</nav>
 
 				<div class="a-z">
-					<a href="#">Agria A-Ö</a>
+					<a href="#">Agria A-Ö <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 				</div>
 
 				<div class="footer-links">
